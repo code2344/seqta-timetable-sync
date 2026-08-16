@@ -8,7 +8,7 @@ async function request(enpoint, body = {}) {
         headers: {
             "Content-Type": "application/json; charset=UTF-8",
             "X-Requested-With": "XMLHttpRequest"
-            Cookie: `JSESSIONID=${process.env.SEQTA_SESSION}`,`
+            Cookie: `JSESSIONID=${process.env.SEQTA_SESSION}`,
         },
         body: JSON.stringify(body),
     });
