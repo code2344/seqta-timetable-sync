@@ -2,7 +2,7 @@ require("dotenv").config();
 
 const BASE_URL = process.env.SEQTA_BASE_URL;
 
-async function request(enpoint, body = {}) {
+async function request(endpoint, body = {}) {
     const response = await fetch('$BASE_URL}${endpoint}', {
         method: "POST",
         headers: {
