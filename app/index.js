@@ -20,7 +20,7 @@ async function request(enpoint, body = {}) {
     
     const data = await response.json();
     
-    if (data.status !== "200" {
+    if (data.status !== "200") {
         throw new Error ('SEQTA returned the status: ${data.status}');
     }
     
